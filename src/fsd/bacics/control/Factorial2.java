@@ -2,22 +2,21 @@ package fsd.bacics.control;
 
 import java.util.Scanner;
 
-public class Task {
+public class Factorial2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int b = 1;
+		int i=1;
        Scanner scanner = new Scanner(System.in);
        System.out.println("Enter your num : ");
        int a = scanner.nextInt();
-       if (a%2<=0)
-       {
-    	   System.out.println("even");
-       }
-       else
-       {
-    	   System.out.println("odd");
-       }
-    		   
+       do 
+       {  
+    	   
+    	   b=b*i;
+    	   i++;
+    	 }while(i<=a);
+       System.out.println(b);
 	}
 }
-	
