@@ -12,7 +12,7 @@ public class Recursive {
 			{
 				if(i>=0)
 				{
-					System.out.println(i);
+					System.out.println(arr[i]);
 					recursion(arr,--i);
 				}
 				return i;
