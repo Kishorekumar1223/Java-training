@@ -12,7 +12,7 @@ public class Binary {
 		if(res!=-1) 
 			System.out.println(search +"search:value: "+n+" index: "+res);
 		else 
-		System.out.println(search +"search: :");
+			System.out.println(search +"search: :(");
 	}
 	private static int linearsearch(int[] arr, int n) {
 		int loopexcution =0;
@@ -20,7 +20,7 @@ public class Binary {
 			loopexcution++;
 			if(arr[i] == n) {
 				System.out.println("linear search loop excution: "+loopexcution);
-				return -1;
+				return i;
 			}
 		}
 		System.out.println("linear search loop excution: "+loopexcution);
@@ -38,10 +38,10 @@ public class Binary {
 				System.out.println("binary search loop excution: "+loopexcution);
 				return mid;
 			}
-			else if (arr[mid]>n){
+			else if (arr[mid]<n){
 				start= mid+1;
 			}
-			else if(arr[mid]<n){
+			else if(arr[mid]>n){
 				end =mid-1;
 			}
 		}
@@ -65,10 +65,10 @@ public class Binary {
 				System.out.println("binary search loop excution: "+loopexcution);
 				return mid2;
 			}
-			if (arr[mid1]<n){
+			if (arr[mid1]>n){
 				end = mid1-1;
 			}
-			else if(arr[mid2]>n){
+			else if(arr[mid2]<n){
 				start = mid2+1;
 			}else
 			{
