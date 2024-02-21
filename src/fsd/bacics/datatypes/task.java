@@ -5,32 +5,24 @@ import java.util.Scanner;
 public class task {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	  int a;
-      // int b;
-      Scanner scanner = new Scanner(System.in);
-      System.out.println("Enter your num :");
-      a = scanner.nextInt();
-      //System.out.println("Enter your second num :");
-      // b = scanner.nextInt();
-//      
-//      int add = a + b;
-//      int sub = a - b;
-//      int mul = a * b;
-//      int div = a / b;
-//      System.out.println(add);
-//      System.out.println(sub);
-//      System.out.println(mul);
-//      System.out.println(div);
-      if ()
-      {
-    	  System.out.println("Even");
-      }
-      else 
-      {
-    	  System.out.println("odd");
-      }
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();	
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(i==n-1 || j==0){
+					System.out.print("*");
+				}
+				else if(i==3 && j==1 || i==2 && j==2){
+					System.out.print("*");
+				}
+				else if(i==1 && j==3 || i==0 && j==4) {
+					System.out.print("*");
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
 	}
-
 }
- 	
+}
