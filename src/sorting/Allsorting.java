@@ -1,7 +1,8 @@
 package sorting;
 public class Allsorting
 {
-		public static void main(String[] args) {
+		public static void main(String[] args) 
+		{
 			int[] arr= {21,9,16,18,17,2};
 			
 			System.out.println("***********Bubble sort***********");
@@ -15,7 +16,7 @@ public class Allsorting
 				System.out.println(arr2[i]);
 						
 			System.out.println("***************Insertion sort**************");
-			int[] arr3=selectionSort(arr);
+			int[] arr3=insertionSort(arr);
 			for(int i=0;i<arr3.length;i++)
 				System.out.println(arr3[i]);			
 		}

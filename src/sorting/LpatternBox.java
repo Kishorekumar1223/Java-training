@@ -1,34 +1,30 @@
 package sorting;
+
 import java.util.Scanner;
-public class Task 
-{
-	public static void main(String[] args)
+
+public class LpatternBox {
+	public static void main(String[] args) 
 	{
-		int i=0;
-		int j=0;
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();	
 		System.out.println("Enter the index i : "+ n);
-		pt(n,i,j);
-	}
-	public static int pt(int n,int i,int j) 
-	{
-		if(i<n) {
-		if(j<n) {
-				if(i==0 || i==n/2 || i==n-1){
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(i==0 || j==0 && i==n/2 || j==n/2){
 					System.out.print(" * ");
 				}
-				else if(i==j || (i+j)==n+1) {
+				else if(i==n/2|| j==n/2){
 					System.out.print(" * ");
 				}
+				else if(i== j) {
+					System.out.print(" * ");
+				}
+
 				else{
 					System.out.print("   ");
 				}
-				return pt(n,i,j+1);
 			}
 			System.out.println();
-			return pt(n, i+1, j=0);
 		}
-		return i;
 	}
 }

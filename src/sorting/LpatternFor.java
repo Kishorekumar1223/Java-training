@@ -1,12 +1,13 @@
-package fsd.bacics.datatypes;
+package sorting;
 
 import java.util.Scanner;
 
-public class task {
+public class LpatternFor {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();	
+		System.out.println("Enter the index i : "+ n);
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<n;j++) {
 				if(i==n-1 || j==0){
