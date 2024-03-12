@@ -13,11 +13,10 @@ public class SingleLinkedList {
 			tail = singleLLNode;
 		}
 	}
-	public void mid(int value,int position) {
+	public void insert(int value,int position) {
 		SingleLLNode newNode = new SingleLLNode();
 		newNode.setValue(value);
-		
-		if(head == null && position ==0) {
+		if(head == null && position == 0) {
 			head = newNode;
 			tail = newNode;
 		}
