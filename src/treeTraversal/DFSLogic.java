@@ -100,4 +100,9 @@ public class DFSLogic {
 		Width(root.right,width,level +1);
 		return width;
 	}
+	public void pattern(DFSNode)
+		int n =height*7;
+		int mid =n/2;
+		int x =0,y=0;
+	}
 }

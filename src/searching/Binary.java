@@ -6,8 +6,8 @@ public class Binary {
 		int n=4;
 		print("Linear",linearsearch(arr,n),n);
 		print("Binary",binarysearch(arr,n),n);
-		print("ternary",ternarysearch(arr,n),n);
-		print("ternary",ternarysearch(arr,n),n);
+//		print("ternary",ternarysearch(arr,n),n);
+//		print("ternary",ternarysearch(arr,n),n);
 	}
 	private static void print(String search ,int res,int n) {
 		if(res!=-1) 
