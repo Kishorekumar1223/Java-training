@@ -48,8 +48,4 @@ public class Task1 {
 			return binary(arr, st, end, n);
 			
 		}
-		public int pattern() {
-			
-			return 0;
-		}
 }

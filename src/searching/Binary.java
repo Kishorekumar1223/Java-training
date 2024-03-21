@@ -6,8 +6,8 @@ public class Binary {
 		int n=4;
 		print("Linear",linearsearch(arr,n),n);
 		print("Binary",binarysearch(arr,n),n);
-//		print("ternary",ternarysearch(arr,n),n);
-//		print("ternary",ternarysearch(arr,n),n);
+		print("ternary",ternarysearch(arr,n),n);
+		print("ternary",ternarysearch(arr,n),n);
 	}
 	private static void print(String search ,int res,int n) {
 		if(res!=-1) 
@@ -50,43 +50,43 @@ public class Binary {
 		return -1;
 	}	
 	private static int ternarysearch(int start,int end, int[] arr, int n,int res) {
-//		int start =0;
-//		int end = arr.length-1;
-//		int loopexcution =0;
-		//while(start<=end) 
+		int start =0;
+		int end = arr.length-1;
+		int loopexcution =0;
+		while(start<=end) 
 		if (start<=end)
 		{
-			//loopexcution++;
+			loopexcution++;
 			int mid1= start + (end - start)/3;
 			int mid2=end - (end - start)/3;
 			if(arr[mid1] == n) {
-				//System.out.println("binary search loop excution: "+loopexcution);
+				System.out.println("binary search loop excution: "+loopexcution);
 				res = mid1;
 				return mid1;
 			}
 			if(arr[mid2] == n) {
-				//System.out.println("binary search loop excution: "+loopexcution);
+				System.out.println("binary search loop excution: "+loopexcution);
 				res = mid2;
 				return mid2;
 			}
 			if (arr[mid1]>n){
-				//end = mid1-1;
+				end = mid1-1;
 				res = ternarysearch(start, mid1 -1, arr, n, res);
 			}
 			else if(arr[mid2]<n){
-			//	start = mid2+1;
+				start = mid2+1;
 				res = ternarysearch (mid2 +1,end , arr, n, res);
 
 			}else
 			{
-//				start =mid1+1;
-//				end =mid2-1;
+				start =mid1+1;
+				end =mid2-1;
 				res = ternarysearch (mid1+1,mid2 +1, arr, n, res);
 
 			}
 			
 		}
-		//System.out.println("ternary search loop excution: "+loopexcution);
+		System.out.println("ternary search loop excution: "+loopexcution);
 		return res;
 	}
 }
